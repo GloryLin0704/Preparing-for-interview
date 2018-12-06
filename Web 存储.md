@@ -54,7 +54,6 @@ Cookie 生成有两种方式，
 
 -   存储容量，一般浏览器对每个域可容纳 20 条 Cookie，每个 Cookie 不能超过 4KB
 
-
 > set-Cookie in Node serve
 
 ```
@@ -69,3 +68,41 @@ http.createServer((req, res) => {
 
 console.log("http serve on localhost:3000")
 ```
+
+## localStorage 和 sessionStorage
+
+> 因为 Cookie 的短板，每次请求都会带上 Cookie 的数据，造成不必要的浪费，所以就有了 Web Store 来解决这个问题
+
+-   localStorage：除非被手动清除，否则将会永久保存。使保存的数据超出了浏览器所规定的大小，也不会把旧数据清空而只会报错。
+
+-   sessionStorage： 仅在当前网页会话下有效，关闭页面或浏览器后就会被清除。
+
+Web Storage 的数据不会主动随请求发起，有效的减少了请求的大小
+
+![localStorage](./imgs/localStorage.jpg)
+
+> 数据结构
+
+localStorage 的存储方式是 `key-value` 形式，既键值对形式，这种形式奠定了基本所有类型，转换成字符串之后，都能存在 localStorage 中。
+
+> 设置 localStorage
+
+```js
+localStorage.setItem(key, value);
+
+localStorage.getItme(key);
+
+localStorage.removeItme(key);
+```
+
+> 域名限制和异常处理
+
+localStorage 和 Cookie 不一样，localStorage 无法跨域(同源策略：协议，域名，端口)，仅存在当前域下，无法让子域名继承父域名的 localStorage 数据。
+
+localStorage 在不同的浏览器可能会出现无法 setItem 的情况，用 try/catch 捕获处理异常
+
+>
+
+## session
+
+-   session 和 sessionStorage 不是同一样东西，session 应用在服务端，sessionStorage 应用在浏览器
