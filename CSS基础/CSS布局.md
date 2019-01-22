@@ -41,19 +41,44 @@
 
 
 
+#### inline-block 的间隙
+
+来自 html 代码中的空白区域，将 font-size 置 0
 
 
 
+#### 响应式设计和布局
+
+主要方式：
+
+- 隐藏 + 折行 + 自适应空间
+- rem / viewport / media query 
 
 
 
+```css
+<meta name="viewport" content="width=320">
+```
 
 
 
+```css
+@media (max-width:375px){
+    html{
+        
+    }
+}
+大的放上面，下的放下面
+```
 
 
 
+#### 实现两栏（三栏）布局
 
+- 表格布局
+- float + margin 布局
+- inline-block 布局
+- flexbox 布局 
 
 
 

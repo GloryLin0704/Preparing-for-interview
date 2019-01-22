@@ -9,7 +9,7 @@
 
 适配移动端第一步
 
-<mete name="viewport" xxxx> 
+<mete name="viewport" content="width=device-width"> 
 
 ```html
 a[href, target]
