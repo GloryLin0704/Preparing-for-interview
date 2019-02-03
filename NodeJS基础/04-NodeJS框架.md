@@ -154,6 +154,11 @@ db.orders.aggregate([
 
 
 
+- 数字签名：保证数据不被修改
+- 数字证书：保证服务器的真实
+
+
+
 #### 扩展知识（使用mongodb实现附近的人）
 
 - ![location](G:/%E5%BC%80%E8%AF%BE%E5%90%A7web%E5%85%A8%E6%A0%88%E6%9E%B6%E6%9E%84%E5%B8%88%E5%9B%9B%E6%9C%9F/14%E8%AF%BE%20%20%20NodeJS%E5%9F%BA%E7%A1%80-%E7%AC%AC3%E5%A4%A9-%7B%20MongoDB%E3%80%81https%20%7D/04-NodeJS%E6%A1%86%E6%9E%B6-%E7%AC%AC3%E5%A4%A9-%7B%20MongoDB%E3%80%81https%20%7D/4-%E6%BA%90%E4%BB%A3%E7%A0%81/assets/location.jpg)
