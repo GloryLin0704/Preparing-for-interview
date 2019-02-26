@@ -12,7 +12,7 @@ Cookie 指某些网站为了辨别用户身份而储存在用户本地终端上�
 
 -   其实 `Cookie` 就是一种浏览器管理状态的一个文件。
 
-![Cookie](./imgs/cookie.png)
+![Cookie](../imgs/cookie.png)
 
 ```
 name:一个唯一确定的 cookie 名称。通常来讲 cookie 的名称是不区分大小写的。
