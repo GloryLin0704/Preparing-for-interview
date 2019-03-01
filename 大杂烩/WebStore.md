@@ -36,7 +36,7 @@ secure: 安全标志，指定后，只有在使用 SSL 链接时候才能发送�
 
 第一次访问网站的时候，浏览器发出请求，服务端响应请求后，会将 Cookie 放在请求中，在浏览器第二次发请求的时候，会把 Cookie 带过去，服务端会辨别用户身份。
 
-![Cookie原理](./imgs/cookie原理.png)
+![Cookie原理](./../imgs/cookie原理.png)
 
 > Cookie 生成的方式
 
@@ -79,7 +79,7 @@ console.log("http serve on localhost:3000")
 
 Web Storage 的数据不会主动随请求发起，有效的减少了请求的大小
 
-![localStorage](./imgs/localStorage.jpg)
+![localStorage](./../imgs/localStorage.jpg)
 
 > 数据结构
 

@@ -121,13 +121,11 @@
 - 在结尾处添加空div标签clear:both
 - 给父级 div 定义 height
 - 给父级 div 定义 overflow:hidden
+
   - 不能和position配合使用，因为超出的尺寸的会被隐藏
 - 给父级 div 定义 overflow:auto
+
   - 不能定义height，内部宽高超过父级div时，会出现滚动条
-
-
-
-
 
 
 
@@ -173,8 +171,3 @@
 - overflow属性取值不是“visible”
 - display的值为 “table-cell”, “table-caption”, or “inline-block”中的任何一个
 - position的值不为 “static” 或 “relative”中的任何一个
-
-
-
-
-
