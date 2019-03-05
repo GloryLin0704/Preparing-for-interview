@@ -1,8 +1,10 @@
 #### 生命周期钩子函数
 
-
-
-
+created：创建实例
+mouted：完成挂载
+updated：
+activity:
+destrory:
 
 
 
