@@ -73,6 +73,31 @@
 
 
 
+#### 知道宽高
+
+```
+.father{   
+position: relative;
+} 
+.child{   
+position: absolute;   
+top: 50%;   
+left: 50%;   
+margin: -150px 0 0 -150px; 
+} 
+/* 或者 */ 
+.child{   
+position: absolute;   
+left: 0;   
+top: 0;    
+right: 0;    
+bottom: 0;   
+margin: auto; 
+}
+```
+
+
+
 #### margin折叠(撑开父元素位置，合并相邻元素margin)
 
 **1、子元素的父元素的间距问题(margin 在第一个元素设置的时候会把父元素顶下来)：**
@@ -98,7 +123,7 @@
 
 #### 清除浮动
 
-- 给父级 div 定义伪类：after和zoom
+- 给父级 div 定义伪元素：after和zoom
 
   ```js
   .clearfloat:after {
@@ -171,3 +196,36 @@
 - overflow属性取值不是“visible”
 - display的值为 “table-cell”, “table-caption”, or “inline-block”中的任何一个
 - position的值不为 “static” 或 “relative”中的任何一个
+
+
+
+#### link 和 import 的区别
+
+- 差别1：老祖宗的差别，link属于XHTML标签，而@import完全是css提供的一种方式。
+
+  link标签除了可以加载css外，还可以做很多其他的事情，比如定义RSS，定义rel连接属性等，@import只能加载CSS。
+
+- 差别2：加载顺序的差别：当一个页面被夹在的时候（就是被浏览者浏览的时候），link引用的CSS会同时被加载，而@import引用的CSS会等到页面全部被下载完再加载。所以有时候浏览@import加载CSS的页面时会没有样式（就是闪烁），网速慢的时候还挺明显。
+
+- 差别3：兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题，完全兼容。
+
+
+
+#### CSS中opacity=0,visibility=hidden,display=none
+
+- `opacity=0`  该元素隐藏起来了，但不会改变页面布局，并且，如果该元素已经绑定一些事件，如click事件，那么点击该区域，也能触发点击事件的
+- `visibility=hidden`  该元素隐藏起来了，但不会改变页面布局，但是不会触发该元素已经绑定的事件
+- `display=none`  把元素隐藏起来，并且会改变页面布局，可以理解成在页面中把该元素删除掉一样
+
+
+
+#### 字体小于12px
+
+ Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示
+
+解决方法：可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决
+
+
+
+#### 三栏布局
+
